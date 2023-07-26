@@ -1,0 +1,37 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaApplication.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="AvaloniaApplication">
+
+	<Grid
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center"
+        RowDefinitions="Auto,Auto"
+        ColumnDefinitions="Auto,Auto">
+        <TextBlock
+            Name="TextBlock"
+            Grid.Row="0"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Text="Iteration: XX"/>
+        <Rectangle
+            Name="LeftRectangle"
+            Grid.Row="1"
+            Grid.Column="0"
+            Width="100"
+            Height="100"
+            Fill="Black"/>
+        <Rectangle
+            Name="RightRectangle"
+            Grid.Column="1"
+            Grid.Row="1"
+            Width="100"
+            Height="100"
+            Fill="Black"/>
+    </Grid>
+
+</Window>
